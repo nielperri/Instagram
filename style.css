@@ -5,8 +5,7 @@
     position:static ;
     font-family: sans-serif;
         }
-     align-items: center;
-    justify-content: center;
+     
 
  .p{
      display: fixed;
@@ -78,7 +77,7 @@ form input{
     border-radius: 5px;
 }
 
-}
+
 form textarea{
     padding: 10px;
     outline: none;
